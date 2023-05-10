@@ -18,7 +18,7 @@ borrarContacto(1);
 
 /* Crea una función para imprimir en consola los contactos presentes en la lista */
 
-let verContactos = function() {
+function verContactos() {
     for(let contactos of miListaDeContactos) {
         console.log(contactos);
     }
