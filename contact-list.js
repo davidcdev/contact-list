@@ -20,7 +20,7 @@ ciudad
 dirección
 */
 
-let nuevoContacto = {
+/* let nuevoContacto = {
     id: "id",
     nombres: "nombres",
     apellidos: "apellidos",
@@ -29,7 +29,7 @@ let nuevoContacto = {
         ciudad: "ciudad",
         dirección: "dirección"
     }
-}
+} */
 
 // Intento 1: lo malo es que toca pasar cada propiedad con su valor al llamar la función, sería más práctico usar prompt, pero no he logrado que funcione con prompt.
 let añadirContacto = (nuevoContacto) => {
@@ -56,3 +56,6 @@ function verContactos() {
     }
 }
 verContactos();
+
+// Comprobamos que son un objeto
+console.log(typeof miListaDeContactos[6]);
