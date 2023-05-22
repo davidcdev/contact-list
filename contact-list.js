@@ -4,38 +4,6 @@ let miListaDeContactos = ['Bruce Wayne', 'Clark Kent', 'The Flash', 'Wonder Woma
 
 /* Crea una función para añadir un nuevo contacto a una lista */
 
-<<<<<<< Updated upstream
-/* let añadirContacto = (nombre) => {
-    let nuevoContacto = miListaDeContactos.push(`${nombre}`);
-}
-añadirContacto('Peter Parker'); */
-
-/* 
-Ajusta las funciones de crear y eliminar un contacto para que puedan almacenar la siguiente información como objetos:
-id
-nombres
-apellidos
-teléfono
-ubicaciones
-ciudad
-dirección
-*/
-
-/* let nuevoContacto = {
-    id: "id",
-    nombres: "nombres",
-    apellidos: "apellidos",
-    teléfono: "teléfono",
-    ubicaciones: {
-        ciudad: "ciudad",
-        dirección: "dirección"
-    }
-} */
-
-// Intento 1: lo malo es que toca pasar cada propiedad con su valor al llamar la función, sería más práctico usar prompt, pero no he logrado que funcione con prompt.
-let añadirContacto = (nuevoContacto) => {
-    let add = miListaDeContactos.push(nuevoContacto);
-=======
 const addNewContact = (id,nombres,apellidos,telefono,ciudad,direccion) => {
     let newContact = {};
 
@@ -72,11 +40,6 @@ function verContactos() {
 }
 verContactos(); 
 
-<<<<<<< Updated upstream
-// Comprobamos que son un objeto
-console.log(typeof miListaDeContactos[6]);
-=======
-
 // Bonus: Añade una función que permita actualizar un contacto
 
 const modifyContact = function (array,index,property,value) {
@@ -84,4 +47,3 @@ const modifyContact = function (array,index,property,value) {
 }
 
 modifyContact(miListaDeContactos, 6, this.direccion, "Shield Base"); 
->>>>>>> Stashed changes
