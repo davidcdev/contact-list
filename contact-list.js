@@ -16,7 +16,6 @@ const addNewContact = (id,nombres,apellidos,telefono,ciudad,direccion) => {
     newContact.ubicaciones.direccion = direccion;
 
     miListaDeContactos.push(newContact);
->>>>>>> Stashed changes
 }
 
 addNewContact('Spiderman', 'Peter', 'Parker', 1234567890, 'New York', 'Queens');
