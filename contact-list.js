@@ -4,6 +4,7 @@ let miListaDeContactos = ['Bruce Wayne', 'Clark Kent', 'The Flash', 'Wonder Woma
 
 /* Crea una función para añadir un nuevo contacto a una lista */
 
+<<<<<<< Updated upstream
 /* let añadirContacto = (nombre) => {
     let nuevoContacto = miListaDeContactos.push(`${nombre}`);
 }
@@ -34,20 +35,34 @@ dirección
 // Intento 1: lo malo es que toca pasar cada propiedad con su valor al llamar la función, sería más práctico usar prompt, pero no he logrado que funcione con prompt.
 let añadirContacto = (nuevoContacto) => {
     let add = miListaDeContactos.push(nuevoContacto);
+=======
+const addNewContact = (id,nombres,apellidos,telefono,ciudad,direccion) => {
+    let newContact = {};
+
+    newContact.id = id;
+    newContact.nombres = nombres;
+    newContact.apellidos = apellidos;
+    newContact.telefono = telefono;
+    newContact.ubicaciones = {};
+    newContact.ubicaciones.ciudad = ciudad;
+    newContact.ubicaciones.direccion = direccion;
+
+    miListaDeContactos.push(newContact);
+>>>>>>> Stashed changes
 }
 
-añadirContacto({id:"Spiderman",nombres:"Peter",apellidos:"Parker",teléfono:1234567890,ciudad:"New York",dirección: "Queens"});
-añadirContacto({id:"SpongeBob",nombres:"Bob Esponja",apellidos:"Pantalones Cuadrados",teléfono:1234567890,ciudad:"Fondo de Bikini",dirección: "La piña en el fondo del mar"});
-añadirContacto({id:"Black Widow",nombres:"Natasha",apellidos:"Romanov",teléfono:1234567890,ciudad:"New York",dirección: "Cannot locate"});
-
+addNewContact('Spiderman', 'Peter', 'Parker', 1234567890, 'New York', 'Queens');
+addNewContact('SpongeBob', 'Bob Esponja', 'Pantalones Cuadrados', 0987654321, 'Fondo de Bikini', 'La piña en el fondo del mar');
+addNewContact('Black Widow', 'Natasha', 'Romanov', 31245346756, 'New York', 'Cannot Locate');
 
 /* Crea una función para borrar un contacto existente de la lista */
 
-let borrarContacto = x => {
+ let borrarContacto = x => {
     let eliminarContacto = miListaDeContactos.splice(`${x}`, 1);
 }
-borrarContacto(1);
+borrarContacto(4); 
 
+/* console.log(miListaDeContactos); */
 /* Crea una función para imprimir en consola los contactos presentes en la lista */
 
 function verContactos() {
@@ -55,7 +70,18 @@ function verContactos() {
         console.log(contactos);
     }
 }
-verContactos();
+verContactos(); 
 
+<<<<<<< Updated upstream
 // Comprobamos que son un objeto
 console.log(typeof miListaDeContactos[6]);
+=======
+
+// Bonus: Añade una función que permita actualizar un contacto
+
+const modifyContact = function (array,index,property,value) {
+    return array[index][property] = value;
+}
+
+modifyContact(miListaDeContactos, 6, this.direccion, "Shield Base"); 
+>>>>>>> Stashed changes
